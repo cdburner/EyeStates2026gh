@@ -12,28 +12,17 @@ public class CentreLeftState : BaseEyeState
 
     public override void UpdateState(EyeController ec)
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            ec.TransitionToState(ec.tls);
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            ec.TransitionToState(ec.bls);
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            ec.TransitionToState(ec.ccs);
-        }
+        
     }
 
     public override void Up(EyeController ec)
     {
-        
+        ec.TransitionToState(ec.tls);
     }
 
     public override void Down(EyeController ec)
     {
-        
+        ec.TransitionToState(ec.bls);
     }
 
     public override void Left(EyeController ec)
@@ -43,6 +32,6 @@ public class CentreLeftState : BaseEyeState
 
     public override void Right(EyeController ec)
     {
-        
+        ec.TransitionToState(ec.ccs);
     }
 }

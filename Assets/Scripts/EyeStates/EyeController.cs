@@ -45,4 +45,21 @@ public class EyeController : MonoBehaviour
         currentState = state;
         currentState.EnterState(this);
     }
+
+    public void OnUp()
+    {
+        currentState.Up(this);
+    }
+    public void OnDown()
+    {
+        currentState.Down(this);
+    }
+    public void OnLeft()
+    {
+        currentState.Left(this);
+    }
+    public void OnRight()
+    {
+        currentState.Right(this);
+    }
 }
