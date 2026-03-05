@@ -28,4 +28,24 @@ public class CentreCentreState : BaseEyeState
             ec.TransitionToState(ec.crs);
         }
     }
+
+    public override void Up(EyeController ec)
+    {
+        
+    }
+
+    public override void Down(EyeController ec)
+    {
+        
+    }
+
+    public override void Left(EyeController ec)
+    {
+        
+    }
+
+    public override void Right(EyeController ec)
+    {
+        
+    }
 }

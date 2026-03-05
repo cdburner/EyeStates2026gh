@@ -20,4 +20,24 @@ public class TopRightState : BaseEyeState
             ec.TransitionToState(ec.tcs);
         }
     }
+
+    public override void Up(EyeController ec)
+    {
+        
+    }
+
+    public override void Down(EyeController ec)
+    {
+        
+    }
+
+    public override void Left(EyeController ec)
+    {
+        
+    }
+
+    public override void Right(EyeController ec)
+    {
+        
+    }
 }
