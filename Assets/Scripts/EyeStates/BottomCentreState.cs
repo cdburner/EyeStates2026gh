@@ -19,11 +19,6 @@ public class BottomCentreState : BaseEyeState
         ec.TransitionToState(ec.ccs);
     }
 
-    public override void Down(EyeController ec)
-    {
-        
-    }
-
     public override void Left(EyeController ec)
     {
         ec.TransitionToState(ec.bls);

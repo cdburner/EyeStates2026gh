@@ -37,29 +37,29 @@ public class EyeController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentState.UpdateState(this);
+        currentState?.UpdateState(this);
     }
 
     public void TransitionToState(BaseEyeState state)
     {
         currentState = state;
-        currentState.EnterState(this);
+        currentState?.EnterState(this);
     }
 
     public void OnUp()
     {
-        currentState.Up(this);
+        currentState?.Up(this);
     }
     public void OnDown()
     {
-        currentState.Down(this);
+        currentState?.Down(this);
     }
     public void OnLeft()
     {
-        currentState.Left(this);
+        currentState?.Left(this);
     }
     public void OnRight()
     {
-        currentState.Right(this);
+        currentState?.Right(this);
     }
 }

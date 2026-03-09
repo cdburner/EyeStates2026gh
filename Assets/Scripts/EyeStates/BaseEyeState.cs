@@ -3,10 +3,10 @@ using UnityEngine;
 
 public abstract class BaseEyeState
 {
-    public abstract void EnterState(EyeController ec);
-    public abstract void UpdateState(EyeController ec);
-    public abstract void Up(EyeController ec);
-    public abstract void Down(EyeController ec);
-    public abstract void Left(EyeController ec);
-    public abstract void Right(EyeController ec);
+    public virtual void EnterState(EyeController ec) { }
+    public virtual void UpdateState(EyeController ec)  { }
+    public virtual void Up(EyeController ec)  { }
+    public virtual void Down(EyeController ec)  { }
+    public virtual void Left(EyeController ec)  { }
+    public virtual void Right(EyeController ec) { }
 }
