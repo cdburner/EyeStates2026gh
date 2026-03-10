@@ -10,12 +10,7 @@ public class CentreRightState : BaseEyeState
     {
         ec.eye.eulerAngles = new Vector3(-30, 0, 0);
     }
-
-    public override void UpdateState(EyeController ec)
-    {
-        
-    }
-
+    
     public override void Up(EyeController ec)
     {
         ec.TransitionToState(ec.trs);
@@ -29,10 +24,5 @@ public class CentreRightState : BaseEyeState
     public override void Left(EyeController ec)
     {
         ec.TransitionToState(ec.ccs);
-    }
-
-    public override void Right(EyeController ec)
-    {
-        
     }
 }

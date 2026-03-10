@@ -8,25 +8,10 @@ public class TopLeftState : BaseEyeState
     {
         ec.eye.eulerAngles = new Vector3(30, 0, -30);
     }
-
-    public override void UpdateState(EyeController ec)
-    {
-
-    }
-
-    public override void Up(EyeController ec)
-    {
-        
-    }
-
+    
     public override void Down(EyeController ec)
     {
         ec.TransitionToState(ec.cls);
-    }
-
-    public override void Left(EyeController ec)
-    {
-        
     }
 
     public override void Right(EyeController ec)

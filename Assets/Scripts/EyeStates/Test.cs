@@ -5,11 +5,6 @@
         {
             
         }
-        
-        public override void UpdateState(EyeController ec)
-        {
-            
-        }
 
         public override void Up(EyeController ec)
         {

@@ -9,16 +9,6 @@ public class TopCentreState : BaseEyeState
         ec.eye.eulerAngles = new Vector3(0, 0, -30f);
     }
 
-    public override void UpdateState(EyeController ec)
-    {
-        
-    }
-
-    public override void Up(EyeController ec)
-    {
-        
-    }
-
     public override void Down(EyeController ec)
     {
         ec.TransitionToState(ec.ccs);

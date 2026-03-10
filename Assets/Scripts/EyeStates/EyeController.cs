@@ -34,12 +34,6 @@ public class EyeController : MonoBehaviour
         TransitionToState(ccs);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        currentState?.UpdateState(this);
-    }
-
     public void TransitionToState(BaseEyeState state)
     {
         currentState = state;
